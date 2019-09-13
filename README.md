@@ -49,3 +49,12 @@ Es funktionieren höchstwahrscheinlich auch ältere Versionen von `lualatex` sow
 - Führe `lualatex brief.tex` zweimal aus wenn du die Quelldateien geändert hast.
 - `brief-absender.lco` beinhaltet einige Stil-Definitionen die Geschmackssache sind, wie z. B.  `\setkomafont{fromaddress}{\small\mdseries\slshape\color{black}}`. Das kann alles angepasst werden (eine Internet-Recherche hilft).
 
+
+## Referenzen
+
+- https://de.wikibooks.org/wiki/LaTeX-Kompendium:_Sonderzeichen
+- https://practicaltypography.com/first-line-indents.html
+- https://www.tug.org/texlive/windows.html
+- https://de.wikipedia.org/wiki/LaTeX
+- https://de.wikibooks.org/wiki/LaTeX-Kompendium
+- https://de.wikibooks.org/wiki/LaTeX-Kompendium:_Schnellkurs:_Das_erste_Dokument
