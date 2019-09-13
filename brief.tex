@@ -1,0 +1,53 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}
+\usepackage{fontspec}
+\usepackage{libertine}
+\usepackage{microtype}
+\usepackage{polyglossia}
+\setdefaultlanguage[spelling=new, babelshorthands=true]{german}
+
+\usepackage{changepage}
+
+\usepackage[babel,german=quotes]{csquotes}
+
+% Bis KOMA-Script 3.11b war das Paket scrpage2 das Mittel der Wahl, wenn es
+% darum ging, den Kopf und den Fuß der Seite über das hinaus zu verändern, was
+% die KOMA-Script-Klassen mit den Seitenstilen headings, myheadings, plain und
+% empty boten. Bis 2001 gab es dafür auch noch das Paket scrpage, das aber seit
+% 2013 nicht mehr mit KOMA-Script zusammen erteilt wird. Seit 2013 ist das Paket
+% scrlayer als neuer, grundlegender Baustein in KOMA-Script enthalten.
+% Siehe auch http://www.komascript.de/node/1490#comment-3940
+
+\usepackage{scrletter}
+\LoadLetterOption{brief-absender}
+
+%\changepage{text height}{text width}{even-side margin}
+%{odd-side margin}{column sep.}
+%{topmargin}{headheight}{headsep}{footskip}
+\changepage{+3cm}{}{}{}{}{}{}{}{-5cm}
+\renewcommand{\familydefault}{\sfdefault}
+
+\setkomavar{subject}{Ein wichtiger Betreff}
+\setkomavar{place}{Hamburg}
+\setkomavar{date}{29. August 2019}
+
+% Nicht den ersten Satz im Absatz einrücken.
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{letter}{
+Erich Empfänger\\
+Alter Weg 66 \\
+30160 Hannover
+}
+
+\opening{Sehr geehrter Herr Empfänger,}
+
+
+für Ihren Auftrag bedanke ich mich und berechne für meine Leistungen rein gar
+nichts!
+
+Ein paar Worte mit Sonderzeichen: eine ähnliche Öffnung kostet 125,00\,€.
+
+\closing{Mit freundlichen Grüßen}
+\end{letter}
+\end{document}
