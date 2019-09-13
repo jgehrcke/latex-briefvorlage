@@ -1,0 +1,47 @@
+%\ProvidesFile{brief-absender.lco}[letter-class-option file]
+
+% (cell)phone, email symbol
+\RequirePackage{marvosym}
+% for gray color in header
+\RequirePackage{color}
+
+\KOMAoptions{
+foldmarks=true,
+foldmarks=true,
+fromurl=true,
+fromemail=true,
+fromphone=false,
+%fromfax=true,
+fromalign=right,
+fromrule=off,
+footsepline=off,
+}
+
+% define gray for header
+\definecolor{mygray}{gray}{.55}
+% define blue for address
+\definecolor{myblue}{rgb}{0.25,0.45,0.75}
+
+\setkomavar{fromname}{Dr.\ Achim Absender}
+\setkomafont{fromname}{\bfseries\color{black}\Large}
+\setkomafont{fromrule}{\color{black}}
+\setkomafont{addressee}{\small}
+\setkomavar{fromemail}[]{achim@absen.der}
+\setkomavar{fromurl}[]{https://achimistderbeste.de}
+
+% Das kann hier alles angepasst werden, z. B. Mit oder ohne Profession:
+\setkomavar{fromaddress}{Massage-Spezialist \\  Neuer Weg 2, 20350 Hamburg}
+%\setkomavar{fromaddress}{Neuer Weg 2, 20350 Hamburg}
+
+\setkomafont{fromaddress}{\small\mdseries\slshape\color{black}}
+\setkomavar{backaddress}{Dr.\ Achim Absender, Neuer Weg 2, 20350 Hamburg}
+
+\setkomavar{signature}{Achim Absender}
+
+% Signature: same indention level as rest
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% space for signature
+\@setplength{sigbeforevskip}{1.8cm}
+
+\endinput
