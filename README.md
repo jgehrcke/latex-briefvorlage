@@ -1,12 +1,18 @@
 # LaTeX Briefvorlage
 
-Im Jahr 2009 habe ich einen Blog-Post veröffentlicht mit einer LaTeX-Briefvorlage: https://gehrcke.de/2009/12/latex-briefvorlage/
+Im Jahr 2009 habe ich einen Blog-Post mit einer LaTeX-Briefvorlage für den deutschsprachigen Raum veröffentlicht: https://gehrcke.de/2009/12/latex-briefvorlage/
+
+Eckdaten:
+
+- Output: PDF-Dokument im A4-Format, siehe [brief.pdf](https://github.com/jgehrcke/latex-briefvorlage/blob/master/brief.pdf).
+- Perfekt nach DIN-Regeln gesetzt, inklusive Faltmarken am linken Rand.
+- Professionelle Typographie.
 
 Über die Jahre habe ich dazu sehr viel positives Feedback bekommen (Danke!) und 2013 ein größeres Update vorgenommen.
 
-Auch in den letzten 6 Jahren (2013 bis 2019) habe ich die Briefvorlage für mich selbst sehr viel benutzt und leicht weiterentwickelt (eine wesentliche technische Änderung im Vergleich zur Version von 2009 und 2013 ist der Umstieg von `pdflatex` nach `lualatex` für die Kompilierung in ein PDF-Dokument).
+Auch in den letzten Jahren (2013 bis 2019) habe ich die Briefvorlage für mich selbst sehr viel benutzt und leicht weiterentwickelt (eine wesentliche technische Änderung im Vergleich zur Version von 2009 und 2013 ist der Umstieg von `pdflatex` nach `lualatex` für die Kompilierung in ein PDF-Dokument).
 In diesem Code-Repository findet Ihr nun die aktuelle Variante.
-Ihr könnt die Vorlage gerne für alles erdenkliche benutzen.
+Ihr könnt die Vorlage gerne für alles Erdenkliche benutzen.
 Und bitte gebt mir gerne weiterhin Feedback!
 
 
